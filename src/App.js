@@ -30,7 +30,6 @@ function initializeFirebase(){
 initializeFirebase();
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-const analytics = firebase.analytics();
 
 
 function App() {
@@ -40,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1 className='head'>Superchat🎇</h1>
         <SignOut />
       </header>
 
