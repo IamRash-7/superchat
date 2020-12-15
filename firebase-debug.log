@@ -1,0 +1,93 @@
+[debug] [2020-12-13T04:46:13.112Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:46:13.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bbabi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-12-13T04:46:13.114Z] CLI Version:   8.19.0
+[debug] [2020-12-13T04:46:13.114Z] Platform:      win32
+[debug] [2020-12-13T04:46:13.114Z] Node Version:  v12.16.3
+[debug] [2020-12-13T04:46:13.115Z] Time:          Sun Dec 13 2020 10:16:13 GMT+0530 (India Standard Time)
+[debug] [2020-12-13T04:46:13.115Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:46:13.115Z] 
+[debug] [2020-12-13T04:46:13.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-13T04:46:13.122Z] > authorizing via signed-in user
+[debug] [2020-12-13T04:46:13.123Z] [iam] checking project superchat-a6732 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-12-13T04:46:13.125Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-a6732:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-12-13T04:46:34.352Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 142.250.71.10:443
+[debug] [2020-12-13T04:46:34.353Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/superchat-a6732/serviceAccounts/superchat-a6732@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-12-13T04:46:58.814Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:46:58.815Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bbabi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-12-13T04:46:58.816Z] CLI Version:   8.19.0
+[debug] [2020-12-13T04:46:58.816Z] Platform:      win32
+[debug] [2020-12-13T04:46:58.816Z] Node Version:  v12.16.3
+[debug] [2020-12-13T04:46:58.817Z] Time:          Sun Dec 13 2020 10:16:58 GMT+0530 (India Standard Time)
+[debug] [2020-12-13T04:46:58.817Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:46:58.817Z] 
+[debug] [2020-12-13T04:46:58.824Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-13T04:46:58.824Z] > authorizing via signed-in user
+[debug] [2020-12-13T04:46:58.825Z] [iam] checking project superchat-a6732 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-12-13T04:46:58.827Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-a6732:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-12-13T04:47:19.850Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 142.250.71.10:443
+[debug] [2020-12-13T04:47:19.851Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/superchat-a6732/serviceAccounts/superchat-a6732@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-12-13T04:47:21.802Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Dec 2020 04:47:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'superchat-a6732'...
+[info] 
+[info] i  deploying functions 
+[debug] [2020-12-13T04:47:25.376Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2020-12-13T04:47:26.763Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/superchat-a6732/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-12-13T04:47:26.764Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/superchat-a6732/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-12-13T04:47:26.764Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/superchat-a6732/services/cloudbuild.googleapis.com  
+ 
+[debug] [2020-12-13T04:47:29.401Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Dec 2020 04:47:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-13T04:47:29.427Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Dec 2020 04:47:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2020-12-13T04:47:29.432Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/superchat-a6732/services/cloudbuild.googleapis.com:enable  
+ 
+[debug] [2020-12-13T04:47:29.479Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Dec 2020 04:47:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2020-12-13T04:48:11.918Z] Error: connect ETIMEDOUT 172.217.26.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.26.234:443
+[debug] [2020-12-13T04:49:40.671Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:49:40.673Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bbabi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-12-13T04:49:40.674Z] CLI Version:   8.19.0
+[debug] [2020-12-13T04:49:40.674Z] Platform:      win32
+[debug] [2020-12-13T04:49:40.674Z] Node Version:  v12.16.3
+[debug] [2020-12-13T04:49:40.675Z] Time:          Sun Dec 13 2020 10:19:40 GMT+0530 (India Standard Time)
+[debug] [2020-12-13T04:49:40.675Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T04:49:40.675Z] 
+[debug] [2020-12-13T04:49:40.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-13T04:49:40.685Z] > authorizing via signed-in user
+[debug] [2020-12-13T04:49:40.686Z] [iam] checking project superchat-a6732 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-12-13T04:49:40.689Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-a6732:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
